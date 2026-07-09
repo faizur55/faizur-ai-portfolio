@@ -1,0 +1,45 @@
+.contact{
+
+    padding:120px 8%;
+
+    background:#0f172a;
+
+}
+
+.contact-title{
+
+    color:white;
+
+    font-size:52px;
+
+    margin-top:20px;
+
+    margin-bottom:18px;
+
+}
+
+.contact-subtitle{
+
+    color:#94a3b8;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    margin-bottom:70px;
+
+}
+
+.section-tag{
+
+    color:#10b981;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+}

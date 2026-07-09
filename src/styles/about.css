@@ -1,0 +1,299 @@
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:var(--space-7) 8%;
+
+    background:var(--bg);
+
+}
+
+.about-container{
+
+    max-width:1150px;
+
+    margin:auto;
+
+}
+
+/* =====================================================
+   SECTION TAG
+===================================================== */
+
+.section-tag{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:22px;
+
+}
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.about h2{
+
+    font-size:var(--section-title);
+
+    color:var(--text);
+
+    line-height:1.15;
+
+    margin-bottom:28px;
+
+    max-width:820px;
+
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.about-text{
+
+    max-width:760px;
+
+    color:var(--muted);
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    margin-bottom:70px;
+
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.about-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:36px;
+
+    transition:var(--transition);
+
+    backdrop-filter:blur(18px);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* soft glow */
+
+.about-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    rgba(16,185,129,.08),
+
+    transparent
+
+    );
+
+    opacity:0;
+
+    transition:var(--transition);
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(16,185,129,.35);
+
+    box-shadow:
+
+    var(--shadow-lg),
+
+    var(--glow);
+
+}
+
+.about-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.about-card h3{
+
+    color:var(--text);
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.about-card p{
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:992px){
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+gap:24px;
+
+}
+
+.about h2{
+
+font-size:42px;
+
+}
+
+.about-text{
+
+font-size:18px;
+
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+.about{
+
+padding:90px 24px;
+
+}
+
+.about h2{
+
+font-size:34px;
+
+}
+
+.about-text{
+
+font-size:17px;
+
+line-height:1.8;
+
+margin-bottom:50px;
+
+}
+
+.about-card{
+
+padding:28px;
+
+}
+
+.about-card h3{
+
+font-size:21px;
+
+}
+
+}
+
+/* =====================================================
+   EXTRA SMALL
+===================================================== */
+
+@media(max-width:480px){
+
+.about{
+
+padding:80px 18px;
+
+}
+
+.about h2{
+
+font-size:30px;
+
+}
+
+.about-text{
+
+font-size:16px;
+
+}
+
+.about-card{
+
+padding:24px;
+
+}
+
+}

@@ -1,0 +1,167 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 70px;
+
+  background: rgba(5,5,8,.85);
+  backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(255,255,255,.08);
+
+  z-index: 1000;
+}
+
+.logo{
+  color:white;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:35px;
+}
+
+.nav-links li{
+  color:#d1d5db;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.nav-links li:hover{
+  color:#10b981;
+}
+
+.resume-btn{
+  padding:12px 22px;
+  background:#10b981;
+  border:none;
+  border-radius:8px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.resume-btn:hover{
+  transform:translateY(-2px);
+}}
+.nav-links li{
+
+position:relative;
+
+font-weight:500;
+
+padding-bottom:6px;
+
+}
+
+.nav-links li::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:0;
+
+width:0;
+
+height:2px;
+
+background:var(--primary);
+
+transition:var(--transition);
+
+}
+
+.nav-links li:hover::after{
+
+width:100%;
+
+}
+
+.active-link{
+
+color:var(--primary)!important;
+
+}
+
+.active-link::after{
+
+width:100%;
+
+}
+
+.resume-btn{
+
+box-shadow:0 0 0 transparent;
+
+}
+
+.resume-btn:hover{
+
+box-shadow:
+
+0 10px 30px rgba(16,185,129,.35);
+
+}
+/* ---------- Right Side ---------- */
+
+.nav-right{
+
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+}
+
+/* ---------- Menu Button ---------- */
+
+.menu-btn{
+
+width:46px;
+
+height:46px;
+
+border:none;
+
+border-radius:12px;
+
+background:rgba(255,255,255,.05);
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:var(--transition);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.menu-btn:hover{
+
+background:var(--primary);
+
+transform:rotate(90deg);
+
+box-shadow:
+
+0 12px 28px rgba(16,185,129,.35);
+
+}

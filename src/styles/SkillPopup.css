@@ -1,0 +1,286 @@
+/* ===========================
+   Skill Popup
+=========================== */
+
+.skill-popup {
+
+  position: fixed;
+
+  right: 40px;
+
+  bottom: 40px;
+
+  width: 340px;
+
+  background: rgba(10, 10, 15, 0.95);
+
+  border: 1px solid rgba(16, 185, 129, 0.35);
+
+  border-radius: 20px;
+
+  padding: 24px;
+
+  backdrop-filter: blur(18px);
+
+  box-shadow: 0 20px 45px rgba(16, 185, 129, 0.18);
+
+  z-index: 9999;
+
+  animation: popupIn .35s ease;
+
+}
+
+/* ---------- Heading ---------- */
+
+.skill-popup h3 {
+
+  color: #10b981;
+
+  font-size: 28px;
+
+  margin-bottom: 14px;
+
+}
+
+.skill-popup h4 {
+
+  color: white;
+
+  margin-top: 20px;
+
+  margin-bottom: 14px;
+
+  font-size: 18px;
+
+}
+
+/* ---------- Text ---------- */
+
+.skill-popup p {
+
+  color: #d1d5db;
+
+  line-height: 1.7;
+
+  margin-bottom: 10px;
+
+}
+
+.skill-popup strong {
+
+  color: white;
+
+}
+
+/* ---------- Divider ---------- */
+
+.skill-popup hr {
+
+  border: none;
+
+  height: 1px;
+
+  background: rgba(255,255,255,.08);
+
+  margin: 18px 0;
+
+}
+
+/* ---------- Project List ---------- */
+
+.project-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+}
+
+.project-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f3f4f6;
+
+  font-size: 15px;
+
+  transition: .3s;
+
+}
+
+.project-item:hover {
+
+  transform: translateX(6px);
+
+  color: white;
+
+}
+
+/* ---------- Green Dot ---------- */
+
+.green-dot {
+
+  width: 10px;
+
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #10b981;
+
+  box-shadow: 0 0 12px #10b981;
+
+  animation: pulseDot 1.8s infinite;
+
+}
+
+/* ---------- Button ---------- */
+
+.journey-btn {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #10b981,
+    #059669
+  );
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .35s;
+
+}
+
+.journey-btn:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 30px rgba(16,185,129,.35);
+
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes popupIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+@keyframes pulseDot {
+
+  0% {
+
+    transform: scale(1);
+
+    opacity: 1;
+
+  }
+
+  50% {
+
+    transform: scale(1.4);
+
+    opacity: .6;
+
+  }
+
+  100% {
+
+    transform: scale(1);
+
+    opacity: 1;
+
+  }
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:768px) {
+
+  .skill-popup {
+
+    left: 20px;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: auto;
+
+    padding: 20px;
+
+  }
+
+}
+.popup-close{
+
+position:absolute;
+
+top:18px;
+
+right:18px;
+
+width:36px;
+
+height:36px;
+
+border:none;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-size:18px;
+
+}
+
+.popup-close:hover{
+
+background:#10b981;
+
+transform:rotate(90deg);
+
+}
