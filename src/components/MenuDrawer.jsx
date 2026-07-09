@@ -87,9 +87,8 @@ export default function MenuDrawer({ open, setOpen }) {
 
 <a
   href="/resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
   className="drawer-resume"
+  download="Faizur_Rahaman_Resume.pdf"
 >
   📄 Download Resume
 </a>

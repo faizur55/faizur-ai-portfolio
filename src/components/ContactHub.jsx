@@ -93,12 +93,11 @@ export default function ContactHub() {
           <h3>Resume</h3>
 
           <a
-            href={contact.resume}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Download Resume
-          </a>
+  href={contact.resume}
+  download="Faizur_Rahaman_Resume.pdf"
+>
+  📄 Download Resume
+</a>
 
         </div>
 
@@ -187,21 +186,30 @@ export default function ContactHub() {
         viewport={{ once: true }}
       >
 
+<a
+  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="primary-btn"
+>
+  📧 Send Email
+</a>
+<button
+  className="secondary-btn"
+  onClick={() => {
+    navigator.clipboard.writeText(contact.email);
+    alert("Email copied to clipboard!");
+  }}
+>
+  📋 Copy Email
+</button>
         <a
-          href={`mailto:${contact.email}`}
-          className="primary-btn"
-        >
-          Send Email
-        </a>
-
-        <a
-          href={contact.resume}
-          target="_blank"
-          rel="noreferrer"
-          className="secondary-btn"
-        >
-          Download Resume
-        </a>
+  href={contact.resume}
+  download="Faizur_Rahaman_Resume.pdf"
+  className="secondary-btn"
+>
+  📄 Download Resume
+</a>
 
       </motion.div>
 

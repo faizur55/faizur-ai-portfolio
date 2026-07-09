@@ -6,7 +6,6 @@ import { Experience } from "./components/Experience";
 import { Skills } from "./components/Skills";
 import { Navbar } from "./components/Navbar";
 import Contact from "./components/Contact";
-import SectionNavigator from "./components/SectionNavigator";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
 
         <Navbar />
 
-        <SectionNavigator />
+
 
         <main
           style={{

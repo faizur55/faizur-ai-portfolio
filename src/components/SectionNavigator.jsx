@@ -4,9 +4,9 @@ import "../styles/SectionNavigator.css";
 const sections = [
   "hero",
   "about",
+  "skills",
   "projects",
   "experience",
-  "skills",
   "contact",
 ];
 

@@ -96,11 +96,13 @@ export function Navbar() {
 
         <div className="nav-right">
 
-          <button className="resume-btn">
-
-            Resume
-
-          </button>
+          <a
+  href="/resume.pdf"
+  download="Faizur_Rahaman_Resume.pdf"
+  className="resume-btn"
+>
+  📄 Resume
+</a>
 
           <button
             className="menu-btn"
