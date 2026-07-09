@@ -1,7 +1,7 @@
 import "./../styles/Projects.css";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { projects } from "../data/projects";
+import { projects } from "../data/Projects";
 import { ProjectCard } from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 
